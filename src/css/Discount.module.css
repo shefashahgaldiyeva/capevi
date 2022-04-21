@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,900&display=swap');
+.discount{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discount .discountInner{
+    width: 90%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/discount_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.left{  
+    width: 50%;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left>h2{
+    font-size: 1.8rem;
+    font-family: 'Arimo',sans-serif;
+    margin: 4rem 0 1rem 0;
+    text-transform: uppercase;
+}
+.right{
+    width: 40%;
+    background-image: url(../img/business_card-removebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.button{
+    position: relative;
+    margin: 1rem 0 6rem 0;
+    width: 150px;
+    height: 55px;
+    letter-spacing: .03em;
+    font-size: .8rem;
+    line-height: 2em;
+    font-weight: 600;
+    transition: .4s;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    cursor: pointer;    
+}
+.button>span{
+    position: absolute;
+    background-color: #ffec4f;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.button span:nth-child(2){
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+    z-index: 2;
+    transition: .5s;
+    clip-path: polygon(70% 0, 100% 0%, 100% 100%, 70% 100%, 43% 50%);
+}
+.button span:nth-child(2):hover{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 47%);
+}
+.button>span:nth-child(1):hover ~ span:nth-child(2){
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 47%);
+}
+.circle{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    animation: rotation 8s cubic-bezier(0,0,1,1)  infinite;
+}
+.circle .rotateCircle>span{
+    position: absolute;
+    /* transform: rotate(-90deg); */
+    top: 0;
+    left: calc(50% - 4px);
+    width: 10px;
+    height: 50%;
+    text-align: center;
+    transform-origin: bottom center;
+}
+.rotateCircle span:first-child{
+    transform: rotate(-105deg) translateZ(0px);
+    transition-delay: 0ms;
+}
+.rotateCircle span:nth-child(2){
+    transform: rotate(-90deg) translateZ(0px);
+    transition-delay: 25ms;
+}
+.rotateCircle span:nth-child(3){
+    transform: rotate(-70deg) translateZ(0px);
+    transition-delay: 50ms;
+}
+.rotateCircle span:nth-child(4){
+    transform: rotate(-55deg) translateZ(0px);
+    transition-delay: 75ms;
+}
+.rotateCircle span:nth-child(5){
+    transform: rotate(-40deg) translateZ(0px);
+    transition-delay: 100ms;
+}
+.rotateCircle span:nth-child(6){
+    transform: rotate(-25deg) translateZ(0px);
+    transition-delay: 125ms;
+}
+.rotateCircle span:nth-child(7){
+    transform: rotate(-10deg) translateZ(0px);
+    transition-delay: 150ms;
+}
+.rotateCircle span:nth-child(8){
+    transform: rotate(15deg) translateZ(0px);
+    transition-delay: 175ms;
+}
+.rotateCircle span:nth-child(9){
+    transform: rotate(30deg) translateZ(0px);
+    transition-delay: 200ms;    
+}
+.rotateCircle span:nth-child(10){
+    transform: rotate(45deg) translateZ(0px);
+    transition-delay: 225ms;
+}
+.rotateCircle span:nth-child(11){
+    transform: rotate(60deg) translateZ(0px);
+    transition-delay: 250ms;
+}
+.rotateCircle span:nth-child(12){
+    transform: rotate(75deg) translateZ(0px);
+    transition-delay: 275ms;
+}
+.rotateCircle span:nth-child(13){
+    transform: rotate(90deg) translateZ(0px);
+    transition-delay: 300ms;
+}
+.rotateCircle span:nth-child(14){
+    transform: rotate(105deg) translateZ(0px);
+    transition-delay: 325ms;
+}
+.rotateCircle span:nth-child(15){
+    transform: rotate(135deg) translateZ(0px);
+    transition-delay: 375ms;
+}
+.rotateCircle span:nth-child(16){
+    transform: rotate(150deg) translateZ(0px);
+    transition-delay: 400ms;
+}
+.rotateCircle span:nth-child(17){
+    transform: rotate(165deg) translateZ(0px);
+    transition-delay: 425ms;
+}
+.rotateCircle span:nth-child(18){
+    transform: rotate(180deg) translateZ(0px);
+    transition-delay: 450ms;
+}
+.rotateCircle span:nth-child(19){
+    transform: rotate(195deg) translateZ(0px);
+    transition-delay: 475ms;
+}
+.rotateCircle span:nth-child(20){
+    transform: rotate(210deg) translateZ(0px);
+    transition-delay: 500ms;
+}
+.rotateCircle span:nth-child(21){
+    transform: rotate(225deg) translateZ(0px);
+    transition-delay: 525ms;
+}
+.rotateCircle span:nth-child(22){
+    transform: rotate(240deg) translateZ(0px);
+    transition-delay: 550ms;
+}
+.rotateCircle span:nth-child(23){
+    transform: rotate(255deg) translateZ(0px);
+    transition-delay: 575ms;
+}
+.rotateCircle span:nth-child(24){
+    transform: rotate(270deg) translateZ(0px);
+    transition-delay: 600ms;
+}
+.rotateCircle span:nth-child(25){
+    transform: rotate(285deg) translateZ(0px);
+    transition-delay: 625ms;
+}
+.rotateCircle span:nth-child(26){
+    transform: rotate(300deg) translateZ(0px);
+    transition-delay: 650ms;
+}
+.rotateCircle span:nth-child(27){
+    transform: rotate(315deg) translateZ(0px);
+    transition-delay: 675ms;
+}
+.rotateCircle span:nth-child(28){
+    transform: rotate(330deg) translateZ(0px);
+    transition-delay: 700ms;
+}
+.rotateCircle span:nth-child(odd){
+    color: #ed4;
+    text-shadow: 2px 0 0 rgb(56, 56, 56), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+}
+@keyframes rotation {
+    0%{
+        transform: rotateZ(-360deg)
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+}

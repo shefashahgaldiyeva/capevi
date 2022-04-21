@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+.categories{
+    width: 22%;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+}
+.products>h2{
+    font-family: 'Hubballi', cursive;
+}
+.products>ul>li{
+    margin-top: .3rem;
+}
+.products>ul>li>a{
+    display: flex;
+    align-items: center;
+    color: black;
+    letter-spacing: 0.01rem;
+}
+.products>ul>li>a>img{
+    width: 10%;
+    margin-right: 4%;
+}
+.products a:hover{
+    color: rgb(66, 174, 228);
+}
+.promoProductsWrapper{
+    /* border: 1px double dodgerblue; */
+    overflow: hidden;
+    position: relative;
+    visibility: visible;
+    /* display: inline-block; */
+    /* animation: activeDrop ease-in .6s 1 alternate both; */
+    transition: .6s;
+    animation: mini ease-in .6s 1 alternate both;
+}
+.promoProductsPassive{
+    /* border: 1px double red; */
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    /* display: none; */
+    transition: .6s;
+    animation: mega ease-in .6s 1 alternate both;
+    /* animation: passiveDrop ease-in .6s 1 alternate both; */
+}
+.products .promoProducts{
+    padding-left: 20%;
+    animation: passiveDrop ease-in .6s 1 alternate both;
+}
+.active{
+    padding-left: 20%;
+    visibility: visible !important;
+    animation: activeDrop ease-in .6s 1 alternate both;
+}
+@keyframes activeDrop {
+    from { transform: translateY(-100%); opacity: 0}
+    to { transform: translateY(0%); opacity: 1}
+}
+@keyframes passiveDrop {
+    from { transform: translateY(0%); opacity: 1}
+    to { transform: translateY(-100%); opacity: 0}
+}
+@keyframes mini {
+    from { height: 0;}
+    to { height: 14rem;}
+}
+@keyframes mega {
+    from { height: 14rem;}
+    to { height: 0;}
+}
+.products a{
+    color: black;
+    letter-spacing: 0.01rem;
+}

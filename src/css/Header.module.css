@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap'); */
+.header{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headerInner{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'Hubballi', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.headerInner>ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.headerInner>ul>li a,
+.headerInner .cart a{
+    /* font-family: 'Syne Mono', monospace; */
+    font-family: 'Hubballi', cursive;
+    font-weight: 600;
+    color: #4d4d4d;
+    transition: .4s;
+}
+.headerInner>ul>li a:hover,
+.headerInner .cart a:hover{
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.56);
+    color: black;
+}
+.colors{
+    width: 90%;
+    margin: 1rem 0;
+    height: 2.5px;
+    display: flex;
+}
+.colors>div{
+    width: 25%;
+    height: 100%;
+    transform: skew(45deg);
+}
+.colors .blue{
+    background-color: #6cf;
+}
+.colors .red{
+    background-color: #f35;
+}
+.colors .black{
+    background-color: black;
+}
+.colors .yellow{
+    background-color: #ed4;
+}
+
